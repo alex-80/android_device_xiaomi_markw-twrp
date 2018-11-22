@@ -30,6 +30,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/kernel:kernel
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := markw
 PRODUCT_NAME := omni_markw
